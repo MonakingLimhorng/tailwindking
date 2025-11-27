@@ -1,0 +1,29 @@
+/* Paragraphs */
+p {
+    margin-top: 0.5em;
+    line-height: 1.6;           /* maakt tekst makkelijker leesbaar */
+    font-size: 1em;
+    color: #161717;             /* donkere tekst voor contrast */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main headings */
+h1 {
+    font-size: 3em;
+    font-weight: 800;            /* extrabold */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    color: #161717;
+    text-transform: uppercase;   /* past bij jouw stijl */
+    letter-spacing: 1px;
+}
+
+/* Subheadings */
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;            /* bold */
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;                /* iets subtieler dan h1 */
+    margin-bottom: 0.5em;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,56 @@
+/* Form container */
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* iets meer ruimte tussen velden */
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f7f7f7; /* lichte achtergrond voor contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    color: #161717;
+}
+
+/* Inputs & Textareas */
+input, textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0f4c8c;
+    transform: scale(1.03);
+}

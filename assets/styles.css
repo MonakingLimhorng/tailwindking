@@ -1,0 +1,121 @@
+/* ----------------------------- */
+/* Fonts                        */
+/* ----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* ----------------------------- */
+/* Global Reset                 */
+/* ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* Body                         */
+/* ----------------------------- */
+body {
+    background-color: #faecd1; /* softer antiquewhite */
+    color: #161717;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ----------------------------- */
+/* Header                       */
+/* ----------------------------- */
+header {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 0;
+}
+
+/* ----------------------------- */
+/* Text Elements                */
+/* ----------------------------- */
+pre {
+    overflow: auto;
+    font-size: 0.75em;
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+/* ----------------------------- */
+/* Links                        */
+/* ----------------------------- */
+a {
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s ease;
+    padding: 0.15em 0.25em;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #161717;
+    color: #ffffff;
+}
+
+/* ----------------------------- */
+/* Container                    */
+/* ----------------------------- */
+.container {
+    max-width: 85vw;
+    margin-inline: auto;
+    padding-bottom: 3em;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+}
+
+/* ----------------------------- */
+/* Responsive Improvements      */
+/* ----------------------------- */
+@media (max-width: 600px) {
+    .container {
+        max-width: 92vw;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    pre {
+        font-size: 0.8em;
+    }
+}

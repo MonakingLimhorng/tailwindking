@@ -1,40 +1,66 @@
-/* ----------------------------- */
-/* Vertical Navigation Buttons  */
-/* ----------------------------- */
+/* ===== Horizontal Navigation Bar (Fixed Spacing + Centered) ===== */
 
-.vertical-buttons {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
+nav {
+    width: 100%;
+    margin: 25px 0 45px 0;
+}
+
+nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    gap: 0.4em; /* space between items */
+    justify-content: center;   /* keep centered */
+    align-items: center;
+    gap: 18px;                  /* more spacing */
+    padding: 0;
+    flex-wrap: wrap;            /* prevents pushing outside container */
 }
 
-/* Each link */
-.vertical-buttons li a {
-    display: block;
-    padding: 0.6em 0.8em; /* cleaner spacing */
-    background-color: transparent;
-    color: #161717;
+nav li {
+    margin: 0;
+}
+
+/* Make all buttons the same width */
+nav a {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #e5e7eb;
+    color: #111827;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.95em;
-    transition: 0.25s ease;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    min-width: 130px;           /* <— fixes uneven width issue */
+    text-align: center;
+    transition: background 0.25s, transform 0.15s, box-shadow 0.2s;
 }
 
-/* Smooth hover effect */
-.vertical-buttons li a:hover {
-    background-color: #161717;
-    color: #ffffff;
-    text-decoration: none;  /* remove underline, keep clean */
+nav a:hover {
+    background: #d1d5db;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.10);
 }
 
-/* Optional: active page style */
-.vertical-buttons li a.active {
-    background-color: #161717;
-    color: #ffffff;
+nav .active {
+    background: #344b70;
+    color: white;
+    box-shadow: 0 5px 14px rgba(46, 67, 100, 0.25);
+}
+
+/* ===== Mobile tweaks ===== */
+@media (max-width: 600px) {
+    nav ul {
+        gap: 12px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+        flex-wrap: nowrap;      /* horizontal scroll on mobile */
+    }
+
+    nav a {
+        padding: 10px 22px;
+        min-width: 110px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
 }

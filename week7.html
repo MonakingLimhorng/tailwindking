@@ -4,38 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lesweek 7</title>
+
+  <!-- Tailwind build -->
   <link href="./dist/output.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/flexboxes.css">
   <link rel="stylesheet" href="assets/nav.css">
   <link rel="stylesheet" href="assets/typography.css">
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
 
-        <header class="title">Lesweek 7</header>
+    <header class="title">
+      <a href="index.html" style="text-decoration:none; color:#161717; font-size:1.2em;">
+        &#8592; Terug naar Home
+      </a>
+      <div style="margin-top:10px;">Lesweek 7</div>
+    </header>
 
-        <nav>
-            <ul class="vertical-buttons">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="week1.html">Lesweek 1</a></li>
-                <li><a href="week2.html">Lesweek 2</a></li>
-                <li><a href="week3.html">Lesweek 3</a></li>
-                <li><a href="week4.html">Lesweek 4</a></li>
-                <li><a href="week5.html">Lesweek 5</a></li>
-                <li><a href="week6.html">Lesweek 6</a></li>
-                <li><a href="week7.html">Lesweek 7</a></li>
-                <li><a href="week8.html">Lesweek 8</a></li>
-            </ul>
-        </nav>
+    <nav>
+      <ul class="vertical-buttons">
+        <li><a href="week7.html" class="active">Lesweek 7</a></li>
+      </ul>
+    </nav>
 
-        <main>
-            <h1>Wat ik deed in week 7</h1>
-            <p>
-                Deze week heb ik vooral gewerkt aan het polijsten van het design. Ik heb bestanden georganiseerd, CSS opgeschoond, soepelere hover-effecten toegevoegd en alles consistenter gemaakt. Ook heb ik de meeste Figma-schermen afgerond: aankomstbord, vertrekbord en lijninformatie.
-            </p>
-        </main>
+    <main>
+      <h1>Wat ik deed in week 7</h1>
 
-    </div>
+      <p class="mt-2 mb-4">
+        Deze week heb ik vooral gewerkt aan het polijsten van het design. Ik heb bestanden georganiseerd,
+        CSS opgeschoond, soepelere hover-effecten toegevoegd en alles consistenter gemaakt.
+        Ook heb ik de meeste Figma-schermen afgerond: aankomstbord, vertrekbord en lijninformatie.
+      </p>
+
+      <!-- 📸 IMAGE GRID -->
+      <div class="image-row">
+    <img src="../BP_HTML_09TWND-main/images/Scherm 1.png.png">
+    <img src="../BP_HTML_09TWND-main/images/Scherm 2.png.png">
+    <img src="../BP_HTML_09TWND-main/images/Scherm 3.png.png">
+    <img src="../BP_HTML_09TWND-main/images/Scherm 4.png.png">
+</div>
+
+
+      <!-- END GRID -->
+
+    </main>
+
+  </div>
 </body>
 </html>
